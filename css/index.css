@@ -1,0 +1,144 @@
+body {  
+    /* 设置背景图片 */  
+    background-image: url("../images/首页背景图.jpg");  
+      
+    /* 可选的其他背景属性 */  
+    background-repeat: no-repeat; /* 不重复背景图片 */  
+    background-size: cover; /* 缩放背景图片以完全覆盖内容区域 */  
+    background-position: center center; /* 将背景图片定位在中心 */  
+    background-attachment: fixed; /* 背景图片不随页面其余部分滚动 */  
+      
+    /* 清除默认的margin和padding */  
+    margin: 0;  
+    padding: 0;  
+      
+    /* 设置一些基本的样式，以便更好地看到背景 */  
+    font-family: Arial, sans-serif;  
+    color: #fff; /* 设置文本颜色为白色，以便在深色背景上清晰可见 */  
+      
+    /* 使用伪元素来添加半透明黑色层和模糊滤镜效果 */  
+    position: relative;  
+    overflow-x: hidden; /* 如果内容超出视口，隐藏水平滚动条 */  
+}  
+  
+body::before {  
+    content: "";  
+    display: block;  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明背景，透明度为0.5（50%） */  
+      
+    /* 添加模糊滤镜效果 */  
+    filter: blur(5px); /* 模糊半径为5像素 */  
+      
+    /* 如果有需要，可以通过z-index调整伪元素的位置 */  
+    z-index: -1;  
+}  
+  
+/* 确保内容（如文本、图片等）显示在伪元素之上 */  
+body > * {  
+    position: relative; /* 或者使用z-index，视情况而定 */  
+    z-index: 1; /* 确保内容在伪元素之上 */  
+}
+
+#profile {  
+    position: relative; /* 或者你可以使用 position: absolute/fixed，取决于你的布局需求 */  
+    left: 200px; /* 根据需要调整图片距离左边的距离 */  
+    top: 140px; /* 根据需要调整图片距离顶部的距离 */  
+    width: 250px; /* 根据需要设置图片宽度 */  
+    height: 250px; /* 根据需要设置图片高度，为了保持圆形，通常与宽度相同 */  
+    overflow: hidden; /* 隐藏超出div的内容 */  
+}  
+#profile img {  
+    width: 100%; /* 宽度设置为100%，这样图片会填充整个div */  
+    height: auto; /* 高度自动，以保持图片的原始比例 */  
+    border-radius: 50%; /* 设置为50%以创建圆形图片 */  
+    border: 2px solid white; /* 设置白色边框及其粗细 */  
+}
+
+
+#ID
+{
+    position: relative;
+    left: 470px; 
+    top: 0px; 
+}
+
+#ID h1 {  
+    /* 字体选择，*/  
+    font-family: 'Arial', sans-serif;  
+  
+    /* 字号设置，比如这里设置为24px */  
+    font-size: 48px;  
+  
+    /* 字体颜色，比如这里设置为深蓝色 */  
+    color: #8db2d7;  
+  
+    /* 其他可选的样式设置 */  
+    line-height: 0; /* 行高设置，使文本看起来更舒适 */  
+    /* margin-bottom: 10px; 下边距设置，使文本与下方内容有一定间距   */
+    /* 你还可以添加其他CSS属性，如font-weight, letter-spacing, text-decoration等 */  
+}  
+
+
+#signature
+{
+    position: relative;
+    left: 200px; 
+    top: 90px; 
+}
+
+#signature h2 {  
+    /* 字体选择，*/  
+    font-family: 'Arial', sans-serif;  
+  
+    /* 字号设置 */  
+    font-size: 28px;  
+  
+    /* 字体颜色，比如这里设置为深蓝色 */  
+    color: #93abb8;  
+  
+    /* 其他可选的样式设置 */  
+    line-height: 0; /* 行高设置，使文本看起来更舒适 */  
+    /* margin-bottom: 10px; 下边距设置，使文本与下方内容有一定间距   */
+    /* 你还可以添加其他CSS属性，如font-weight, letter-spacing, text-decoration等 */  
+}  
+
+
+#LinkContainer {  
+    display: flex;  
+    justify-content: flex-end; /* 将内容推向右侧 */  
+    align-items: flex-start; /* 根据需要调整垂直对齐 */  
+    height: 100vh; /* 如果需要，设置容器高度 */  
+    padding: 5px; /* 根据需要添加内边距 */  
+    box-sizing: border-box;  
+}  
+  
+#hyperlinkL, #hyperlinkR {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around;  
+    align-items: center;  
+    height: 200px; /* 根据需要调整高度 */  
+    width: 200px; /* 根据需要调整宽度 */  
+    margin-left: 20px; 
+    margin-right: 60px;
+}  
+  
+#hyperlinkL a, #hyperlinkR a {  
+    flex: 0 0 calc(50% - 10px); /* 减去间隔的一半 */  
+    text-align: center;  
+    margin: 10px; /* 调整间隔 */  
+    padding: 20px;  
+    text-decoration: none;  
+    color: #1547973c;  
+    background-color: rgba(247, 216, 242, 0.897) ;  
+    border: none  ;
+}  
+  
+#hyperlinkL a:hover, #hyperlinkR a:hover {  
+    background-color: #ddd;  
+} 

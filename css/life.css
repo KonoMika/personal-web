@@ -1,0 +1,60 @@
+body {  
+    background-color: rgba(247, 216, 242, 0.897);  
+}  
+
+#first{
+    text-align: center;
+}
+
+#home-link {  
+    position: absolute; /* 使用绝对定位将链接固定在左上角 */  
+    top: 40px; /* 距离顶部的距离 */  
+    left: 40px; /* 距离左侧的距离 */  
+    text-decoration: none; /* 移除下划线 */  
+    color: inherit; /* 可以根据需要设置颜色 */  
+    font-weight: bold; /* 可以设置字体粗细 */  
+    /* 其他你想要的样式 */  
+} 
+
+#p1 {  
+    display: flex; /* 启用 Flexbox 布局 */  
+    align-items: center; /* 垂直对齐子项（可选，但保持一致性） */  
+    justify-content: center; /* 水平居中对齐子元素 */     
+    margin-bottom: 100px;
+    margin-top: 100px;
+}  
+
+#p1 img {  
+    margin-right: 30px;   
+}  
+
+#p2 {  
+    display: flex; /* 启用 Flexbox 布局 */  
+    align-items: center; /* 垂直对齐子项（可选，但保持一致性） */  
+    justify-content: center; /* 水平居中对齐子元素 */     
+    margin-bottom: 100px;
+    margin-top: 100px;
+}  
+
+#p2 img {  
+    margin-right: 30px;   
+}  
+
+
+#p3 {  
+    display: flex; /* 启用 Flexbox 布局 */  
+    align-items: center; /* 垂直对齐子项（可选，但保持一致性） */  
+    justify-content: center; /* 水平居中对齐子元素 */     
+    margin-bottom: 100px;
+    margin-top: 100px;
+}  
+
+#p3 img {  
+    margin-right: 30px;   
+}  
+
+
+pre{
+    font-size: 20px;
+    text-align: center;
+}
